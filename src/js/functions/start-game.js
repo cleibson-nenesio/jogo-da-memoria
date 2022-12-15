@@ -1,8 +1,12 @@
 let points = 0
+const pontuation = document.getElementById('pontuation')
 
 function startGame() {
     const cards = document.querySelectorAll('.card')
     turnCards(cards)
+
+    points = 0
+    pontuation.innerText = points
 
     cards.forEach(card => {
         card.addEventListener('click', () => {
@@ -32,8 +36,6 @@ function verifyCards(openCards) {
 }
 
 function verifyPoints(boolean) {
-    const pontuation = document.getElementById('pontuation')
-
     if(boolean == true) {
         points = points + 20
         pontuation.innerText = points

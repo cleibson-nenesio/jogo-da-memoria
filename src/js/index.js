@@ -10,7 +10,6 @@ function removeCards() {
     cards.forEach(card => {
         card.remove()
     })
-    return
 }
 
 getRandomId()
