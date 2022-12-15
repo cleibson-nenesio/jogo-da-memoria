@@ -13,7 +13,8 @@ body {
 
 .main {
     display: flex;
-    background-color: #c3c3c3;
+    background: url('../images/background.jpg') center center no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100%;
 }
@@ -26,6 +27,13 @@ body {
     width: 200px;
     padding: 120px 0;
     font-size: 2.5rem;
+}
+
+.menu p {
+    padding: 5px 30px;
+    background-color: #222023;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .menu button {
@@ -44,7 +52,6 @@ body {
     gap: 20px;
     height: 100vh;
     width: 80%;
-
     padding: 10px;
 }
 
@@ -72,10 +79,10 @@ body {
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    background-color: #161517;
+    background-color: #222023;
     color: #fff;
-
-    border-radius: 5px;
+    border: 5px solid #000;
+    border-radius: 12px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -104,10 +111,10 @@ body {
     background: url('../images/portal-rick-and-morty.png') center center no-repeat;
     background-size: cover;
     color: purple;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .menu button {
         padding: 10px;
         font-size: 1.5rem;
@@ -120,5 +127,21 @@ body {
     .front {
         padding: 2px;
         justify-content: center;
+    }
+}
+
+@media(max-width: 500px) {
+    body {
+        overflow: hidden;
+    }
+
+    .menu {
+        font-size: 1.5rem;
+        width: 50px;
+    }
+
+    .menu button {
+        padding: 5px;
+        font-size: 1rem;
     }
 }
