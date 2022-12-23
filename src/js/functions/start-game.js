@@ -26,7 +26,7 @@ function verifyCards(openCards) {
         verifyPoints(true)
         return
     }
-
+    
     verifyPoints(false)
     setTimeout(() => {
         openCards.forEach(card => {
