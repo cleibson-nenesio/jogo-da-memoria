@@ -13,20 +13,22 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background: url('../images/background.jpg') center center no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+    padding: 10px 120px;
+    gap: 10px;
 }
 
 .menu {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
-    padding: 120px 0;
     font-size: 2.5rem;
+    width: 100%;
 }
 
 .menu p {
@@ -52,9 +54,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    height: 100vh;
     width: 80%;
-    padding: 10px;
 }
 
 .card {
@@ -128,8 +128,13 @@ body {
     }
 
     .front {
+        border: none;
         padding: 2px;
         justify-content: center;
+    }
+
+    .main {
+        padding: 0;
     }
 }
 
@@ -140,7 +145,8 @@ body {
 
     .menu {
         font-size: 1.5rem;
-        width: 50px;
+        padding: 0 30px;
+        margin-top: 18px;
     }
 
     .card {
