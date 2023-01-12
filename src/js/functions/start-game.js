@@ -12,7 +12,7 @@ function startGame() {
         card.addEventListener('click', () => {
             card.classList.add('show')
             const openCards = document.querySelectorAll('.show')
-            openCards.length == 2 ? verifyCards(openCards, points, pontuation) : null
+            openCards.length >= 2 ? verifyCards(openCards, points, pontuation) : null
         })
     })
 }
@@ -36,14 +36,14 @@ function verifyCards(openCards) {
 }
 
 function verifyPoints(boolean) {
-    if(boolean == true) {
+    if(boolean) {
         points = points + 20
         pontuation.innerText = points
         return
     }
 
     if(points == 0) return
-    points = points - 5
+    points -= 5
     pontuation.innerText = points
 }
 

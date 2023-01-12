@@ -108,7 +108,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-
     backface-visibility: hidden;
     background: url('../images/portal-rick-and-morty.png') center center no-repeat;
     background-size: cover;
